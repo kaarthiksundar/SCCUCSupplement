@@ -1,0 +1,29 @@
+case case96
+wind none
+costs none
+refbus 73
+line_probability_threshold 0.1
+gen_probability_threshold 0.01
+logfile case96.log
+linebufferamt 0.0
+loadscale 1.0
+windscale 1.0
+windstddevscale 1.0
+
+mvaBase 100
+thermalLimitscale 1.0
+
+case case96
+hydro_indices ../data/hydro_power_plants_indices.csv
+nuclear_indices ../data/nuclear_power_plants_indices.csv
+remove_indices ../data/remove_plant_indices.csv
+load_file ../data/case96load.csv
+gen_file ../data/case96gen.csv
+gen_startup ../data/case96startup.csv
+wind_cap ../data/case96windcap.csv
+wind_mean ../data/case96windmeans.csv
+wind_stddev ../data/case96windstddev.csv
+gen_prod ../data/case96prodcost.csv
+
+output_file case96.jld
+END
