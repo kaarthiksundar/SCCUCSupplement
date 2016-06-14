@@ -1,0 +1,52 @@
+Data format for case96gen.csv
+
+Column -- Description
+
+1 -- gen number
+2 -- Pmax (MW)
+3 -- Count 'off' init (h)
+4 -- Count 'on' init (h)
+5 -- No load cost ($)
+6 -- Ramp up limit (MW/h)
+7 -- Ramp down limit (MW/h)
+8 -- Minimum down time (h)
+9 -- Minimum up time (h)
+10 -- Minimum output - Pmin (MW)
+11 -- Output at t=0 (MW)
+
+Data format for case96prodcost.csv
+
+This is a piecewise linear production cost. There are three pieces for each generator 
+and the slope i.e., MW/hr data is provided in the file. Each generator 
+has three rows corresponding to each piece. 
+
+Data format for case96startup.csv
+
+Each column has generator's startup block data cost.
+
+There are 8 blocks j1-j8. The value with index j1 is the "hot" start-up cost, i.e. 
+the cost to start the unit after 1 hour of shut down. The value with index j8 is 
+the "cold" start-up cost, i.e. the cost to start the unit after 8 hours of shut 
+down. The values indexed by j2-j7 are the start-up cost after 2-7 hour of shut 
+down (respectively)
+
+Data format for case96windcap.csv
+
+1 -- Busid
+2 -- Windfarm capacity (MW)
+
+Data format for case96load.csv
+
+1 -- Time period
+2..|B| -- Loads at each bus (MW)
+
+Data format for case96windmeans.csv
+
+1 -- wind farm 1 means for all time periods (MW)
+18 -- wind farm 18 means for all the time periods (MW)
+There are 19 windfarms, windfarm 10 and 11 are in the same bus and hence are aggregated.
+
+Data format for case96windvar.csv
+
+1 -- wind farm 1 var for all time periods (MW)
+18 -- wind farm 18 var for all the time periods (MW)
