@@ -34,7 +34,7 @@ julia ../codejl/sccuc_simulation.jl case96.dat
 
 The output of the simulation is a ``.jld`` file (``case96.jld``) which can be opened directly loaded in Julia via the JLD package. Contained in the ``.jld`` file are the optimal objective values, solution times, solution status, and optimal values for the decision variables. 
 
-The file ``case96.dat`` specifies all of the input paths and parameters for the simulation. In particular, one can modify the parameters for different runs.
+The file ``case96.dat`` specifies all of the input paths and parameters for the simulation. In particular, one can modify the parameters for different runs. The input data and the format of the input data is contained in the folder data. The code can be run on other systems by changing the input data suitably according to the data format specified in dataformat file in the data folder. 
 
 
 Further documentation is available on request.
