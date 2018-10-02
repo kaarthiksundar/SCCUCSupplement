@@ -1,5 +1,5 @@
 # SCCUCSupplement
-Repository containing supplementary data and code for the paper "Unit Commitment with N-1 Security and Wind Uncertainty". [arxiv](http://arxiv.org/abs/1602.00079)
+Repository containing supplementary data and code for a chance-constrained unit commitment problem with N-1 security and wind uncertainty". [arxiv](https://arxiv.org/abs/1703.05206)
 
 *Installation instructions:*
 
